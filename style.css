@@ -1,0 +1,1082 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    outline: none;
+}
+:root {
+    --white: #fff;
+    --black: #000;
+    --bg: #3d5f00;
+    --hover: #ffa500;
+}
+*::selection {
+    background: var(--bg);
+    color: var(--white);
+}
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 96px;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+header #search {
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--white);
+    border-bottom: 2px solid #fff;
+}
+header i {
+    color: var(--white);
+    font-size: 16px;
+}
+header .burger {
+    font-size: 35px;
+}
+header h5 {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 500;
+    cursor: pointer;
+}
+header .icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .icon i {
+    font-size: 17px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+header .icon i span {
+    font-size: 15px;
+    font-weight: 200;
+    background-color: #aac674;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+}
+header .icon i:hover, header h5:hover, header .burger:hover  {
+    color: var(--hover);
+}
+.section-padding {
+    padding: 20px 50px;
+}
+.position {
+    margin-top: 115px;
+}
+.relative {
+    position: relative;
+}
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 800;
+    left: 0; right: 0; top: 75px; 
+}
+.navbar a {
+    padding: 0 30px;
+    margin: 0 20px;
+    font-size: 20px;
+    color: var(--bg);
+    background-color: var(--white);
+    font-weight: 500;
+}
+.navbar a:hover {
+    color: var(--hover);
+    text-decoration: underline;
+} 
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 30px;
+    color: var(--bg);
+    cursor: pointer;
+    display: none;
+}
+#home {
+    background-image: url('img/banner/banner.png');
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: -1;
+}
+#home h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--bg);
+}
+#home h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--bg);
+    padding-bottom: 10px;
+}
+#home h6::before {
+    content: "";
+    width: 18%;
+    height: 2px;
+    background-color: var(--bg);
+    position: absolute;
+    left: 50px;
+}
+#home p {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--bg);
+    padding-top: 15px;
+}
+button {
+    background-color: var(--bg);
+    color: var(--white);
+    padding: 15px 20px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 14px;
+    margin: 20px 10px 20px 0;
+}
+button i {
+    font-size: 16px;
+}
+button:hover {
+    background-color: var(--hover);
+}
+#about {
+    position: relative;
+}
+#service {
+    position: relative;
+}
+#price {
+    position: relative;
+}
+#blog {
+    position: relative;
+}
+#about h1, #service h1, #price h1, #blog h1 {
+    color: #e2e7d9;
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+#about h4, #service h4, #price h4, #blog h4{
+    color: var(--bg);
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%,0);  
+}
+#about p, #service p, #price p, #blog p {
+    color: var(--bg);
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px; 
+}
+#about .about-container {
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#about .about-container h3 {
+    color: var(--bg);
+    font-size: 35px;
+}
+#about .about-container p {
+    text-align: left;
+}
+#about .about-container .para {
+    position: relative;
+    width: 54%;
+}
+#about .about-container .para-margin h3, 
+#about .about-container .para-margin p,
+#about .about-container .para-margin button {
+    margin-left: 30px;
+}
+#about .about-container .para .btn {
+    margin-left: 0px;
+}
+#about .about-container .image {
+    position: relative;
+    width: 45%;
+}
+#about .about-container .image .food-img {
+    min-width: 100%;
+    height: 400px;
+    padding: 10px; 
+}
+#about .about-container .image .corner-img {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+#about .about-container .image i {
+    color: #c83516;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#service .service-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#service .service-padding {
+    margin-top: 100px;
+}
+.service-container .menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.service-container .image {
+    width: 45%;
+}
+#service .service-container .menu h3 {
+    color: var(--bg);
+    font-size: 30px;
+}
+#service .service-container .menu .para {
+    width: 100%;
+}
+#service .service-container .menu .para p{
+    text-align: left;
+}
+#service .service-container img {
+    width: 100%;
+    height: 300px;
+}
+.second-banner {
+    margin: 100px 0 20px;
+    background-image: url('img/banner/banner2.png');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.second-banner h5 {
+    font-size: 20px;
+    color: var(--bg);
+}
+.second-banner h1 {
+    font-size: 55px;
+    color: var(--bg);
+    font-weight: 900;
+}
+.second-banner h4 {
+    font-size: 25px;
+    color: var(--bg);
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.second-banner p {
+    font-size: 15px;
+    color: var(--bg);
+    font-weight: 700;
+    padding-top: 20px;
+}
+.price-container {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.price-container .category {
+    width: 30%;
+    min-height: 450px;
+}
+.price-container .category .heading-text {
+    background-color: #608b14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.price-container .category .heading-text h3 {
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
+}
+.price-container .category .heading-text h2 {
+    font-size: 35px;
+    color: var(--white);
+    font-weight: 700;
+}
+.price-container .category .sub-text {
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.price-container .category button {
+    margin-top: 60px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+.third-banner {
+    margin: 100px 0 20px;
+    background-image: url('img/banner/banner3.png');
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.third-banner h5 {
+    font-size: 20px;
+    color: var(--bg);
+}
+.third-banner h1 {
+    font-size: 55px;
+    color: var(--bg);
+    font-weight: 900;
+}
+.third-banner h4 {
+    font-size: 25px;
+    color: var(--bg);
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.third-banner p {
+    font-size: 15px;
+    color: var(--bg);
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: right;
+}
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.blog-container .inner {
+    width: 30%;
+}
+.blog-container .inner img{
+    width: 100%;
+    height: 100%;
+}
+.blog-container .inner-second {
+    padding: 40px 25px;
+    background-color: #f1f1f1;
+}
+.blog-container .inner-second h3{
+    font-size: 25px;
+    color: var(--bg);
+}
+.blog-container .inner-second h6{
+    font-size: 15px;
+    text-align: left;
+    color: var(--bg);
+    margin: 20px 0;
+}
+footer {
+    margin-top: 100px;
+    background-color: var(--bg);
+    padding: 50px;
+    text-align: center;
+    color: var(--white);
+}
+footer a {
+    color: var(--white);
+}
+footer a:hover {
+    color: var(--hover);
+}
+footer a .burger{
+    font-size: 35px;
+    padding: 20px;
+}
+footer h1{
+    font-size: 55px;
+    padding: 10px;
+}
+footer h4{
+    font-size: 25px;
+    padding: 10px;
+}
+footer .social-media a {
+    font-size: 20px;
+    margin: 8px;
+}
+footer .visit{
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media (max-width:1200px) {
+    .navbar a {
+        padding: 0 15px;
+    }
+    #home h1 {
+        font-size: 45px;
+    }
+    #home h4 {
+        font-size: 30px;
+    }
+    #home h6::before {
+        width: 25%;
+    }
+    #home p {
+        font-size: 14px;
+    }
+    button {
+        padding: 14px 18px;
+    }
+    #about h1, #service h1, #price h1, #blog h1 {
+        font-size: 55px;
+        margin: 35px 0 0 0;
+    }
+    #about h4, #service h4, #price h4, #blog h4{
+        font-size: 25px;
+        top: 77px;
+    }
+    #about p, #service p, #price p, #blog p {
+        font-size: 14px;
+        padding-top: 17px; 
+    }
+    #about .about-container {
+        margin-top: 90px;
+    }
+    #about .about-container h3 {
+        font-size: 33px;
+    }
+    #about .about-container .para {
+        width: 58%;
+    }
+    #about .about-container .image {
+        width: 40%;
+    }
+    #about .about-container .image .food-img {
+        height: 375px;
+    }
+    #about .about-container .image i {
+        font-size: 55px;
+    }
+    #service .service-padding {
+        margin-top: 80px;
+    }
+    #service .service-container .menu h3 {
+        font-size: 28px;
+    }
+    #service .service-container img {
+        height: 280px;
+    }
+    .second-banner {
+        margin: 80px 0 20px;
+        height: 70vh;
+    }
+    .second-banner h5 {
+        font-size: 18px;
+    }
+    .second-banner h1 {
+        font-size: 45px;
+    }
+    .second-banner h4 {
+        font-size: 22px;
+    }
+    .second-banner p {
+        font-size: 14px;
+    }
+    .price-container {
+        margin-top: 80px;
+    }
+    .price-container .category {
+        min-height: 400px;
+    }
+    .price-container .category .heading-text h3 {
+        font-size: 22px;
+    }
+    .price-container .category button {
+        margin-top: 50px;
+    }
+    .third-banner {
+        margin: 80px 0 20px;
+        height: 70vh;
+    }
+    .third-banner h5 {
+        font-size: 18px;
+    }
+    .third-banner h1 {
+        font-size: 45px;
+    }
+    .third-banner h4 {
+        font-size: 20px;
+    }
+    .third-banner p {
+        font-size: 14px;
+    }
+    .blog-container {
+        margin-top: 80px;
+    }
+    .blog-container .inner-second h3{
+        font-size: 22px;
+    }
+    .blog-container .inner-second h6{
+        font-size: 14px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+    footer a .burger{
+        font-size: 33px;
+    }
+    footer h1{
+        font-size: 45px;
+    }
+    footer h4{
+        font-size: 23px;
+    }
+    footer .social-media a {
+        font-size: 18px;
+    }
+    footer .visit{
+        font-size: 18px;
+    }  
+}
+@media (max-width:992px) {
+    .navbar a {
+        padding: 0 10px;
+        margin: 0 12px;
+        font-size: 17px;
+    }
+    #home {
+        height: 70vh;
+        background-position: top 0 right 0;
+    }
+    #home h1 {
+        font-size: 40px;
+    }
+    #home h4 {
+        font-size: 25px;
+    }
+    #home h6::before {
+        width: 30%;
+    }
+    #about h1, #service h1, #price h1, #blog h1 {
+        font-size: 50px;
+        margin: 25px 0 0 0;
+    }
+    #about h4, #service h4, #price h4, #blog h4{
+        font-size: 20px;
+        top: 67px;
+    }
+    #about .about-container {
+        margin-top: 70px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #about .about-container h3 {
+        font-size: 30px;
+    }
+    #about .about-container .para {
+        width: 100%;
+    }
+    #about .about-container .image {
+        width: 100%;
+    }
+    #about .about-container .image .food-img {
+        height: 400px;
+    }
+    #about .about-container .image i {
+        font-size: 60px;
+    }
+    #service .service-container {
+        justify-content: center; 
+        flex-wrap: wrap;   
+    }
+    #service .service-padding {
+        margin-top: 60px;
+    }
+    .service-container .menu {
+        width: 100%;
+    }
+    .service-container .image {
+        width: 100%;
+    }
+    #service .service-container .menu h3 {
+        font-size: 25px;
+    }
+    #service .service-container img {
+        height: 320px;
+    }
+    .second-banner {
+        margin: 60px 0 20px;
+        height: 60vh;
+        background-position: top 0 right 65%;
+    }
+    .second-banner h5 {
+        font-size: 17px;
+    }
+    .second-banner h1 {
+        font-size: 40px;
+    }
+    .second-banner h4 {
+        font-size: 20px;
+    }
+    .price-container {
+        margin-top: 60px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .price-container .category {
+        width: 45%;
+        margin: 10px;
+        min-height: 350px;
+    }
+    .price-container .category .heading-text {
+        padding: 20px;
+    }
+    .price-container .category .heading-text h3 {
+        font-size: 20px;
+    }
+    .price-container .category .heading-text h2 {
+        font-size: 25px;
+    }
+    .price-container .category .sub-text {
+        padding: 15px 0;
+    }
+    .price-container .category button {
+        margin-top: 40px;
+    }
+    .third-banner {
+        margin: 60px 0 20px;
+        height: 60vh;
+        background-position: top 0 left 40%;
+    }
+    .third-banner h5 {
+        font-size: 17px;
+    }
+    .third-banner h1 {
+        font-size: 40px;
+    }
+    .third-banner h4 {
+        font-size: 18px;
+    }
+    .blog-container {
+        justify-content: center;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+    .blog-container .inner {
+        width: 45%;
+        margin: 10px;
+    }
+    .blog-container .inner-second h3{
+        font-size: 20px;
+    }
+    footer {
+        margin-top: 60px;
+    }
+    footer a .burger{
+        font-size: 30px;
+    }
+    footer h1{
+        font-size: 40px;
+    }
+    footer h4{
+        font-size: 20px;
+    }
+    footer .social-media a {
+        font-size: 17px;
+    }
+    footer .visit{
+        font-size: 17px;
+    } 
+}
+@media (max-width:768px) {
+    .checkbtn {
+        display: block;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 40px;
+    }
+    .navbar ul {
+        display: block;
+        width: 100%;
+        height: 50vh;
+        position: fixed;
+        top: 120px;
+        left: -100%;
+        background-color: rgb(249, 244, 236);
+        text-align: center;
+        transition: 0.5s;
+    }
+    .navbar ul li {
+        padding: 10px;
+        font-size: 20px;
+    }
+    .navbar ul li a{
+        background-color: rgb(249, 244, 236);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    header #search {
+        font-size: 15px;
+    }
+    header input {
+        width: 100px;
+    }
+    header i {
+        font-size: 15px;
+    }
+    header .burger {
+        font-size: 33px;
+    }
+    header h5 {
+        font-size: 16px;
+    }
+    header .icon i {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+    header .icon i span {
+        font-size: 14px;
+    }
+    .position {
+        margin-top: 75px;
+    }
+    #home {
+        height: 50vh;
+        background-position: top 0% right 100%;
+    }
+    #home h1 {
+        font-size: 35px;
+    }
+    #home h4 {
+        font-size: 20px;
+    }
+    #home p {
+        font-size: 12px;
+    }
+    button {
+        padding: 12px 15px;
+    }
+    #about h1, #service h1, #price h1, #blog h1 {
+        font-size: 45px;
+        margin: 20px 0 0 0;
+    }
+    #about h4, #service h4, #price h4, #blog h4{
+        font-size: 18px;
+        top: 59px;
+    }
+    #about p, #service p, #price p, #blog p {
+        font-size: 13px;
+        padding-top: 15px; 
+    }
+    #about .about-container {
+        margin-top: 50px;
+    }
+    #about .about-container h3 {
+        font-size: 25px;
+    }
+    #about .about-container p {
+        font-size: 13px;
+    }
+    #about .about-container .image .food-img {
+        height: 370px;
+    }
+    #about .about-container .image i {
+        font-size: 50px;
+    }
+    #service .service-padding {
+        margin-top: 40px;
+    }
+    #service .service-container .menu h3 {
+        font-size: 23px;
+    }
+    #service .service-container img {
+        height: 300px;
+    }
+    .second-banner {
+        margin: 40px 0 20px;
+        height: 50vh;
+        background-position: top 0 right 80%;
+    }
+    .second-banner h5 {
+        font-size: 16px;
+    }
+    .second-banner h1 {
+        font-size: 35px;
+    }
+    .second-banner h4 {
+        font-size: 18px;
+    }
+    .second-banner p {
+        font-size: 13px;
+    }
+    .price-container {
+        margin-top: 40px;
+    }
+    .price-container .category {
+        width: 75%;
+        min-height: 400px;
+    }
+    .third-banner {
+        margin: 40px 0 20px;
+        height: 50vh;
+        background-position: top 0 left 50%;
+    }
+    .third-banner h5 {
+        font-size: 16px;
+    }
+    .third-banner h1 {
+        font-size: 35px;
+    }
+    .third-banner h4 {
+        font-size: 17px;
+    }
+    .third-banner p {
+        font-size: 13px;
+    }
+    .blog-container {
+        margin-top: 40px;
+    }
+    .blog-container .inner {
+        width: 90%;
+    }
+    .blog-container .inner-second h3{
+        font-size: 18px;
+    }
+    .blog-container .inner-second h6{
+        font-size: 13px;
+    }
+    footer {
+        margin-top: 40px;
+    }
+    footer a .burger{
+        font-size: 25px;
+    }
+    footer h1{
+        font-size: 35px;
+    }
+    footer h4{
+        font-size: 17px;
+    }
+    footer .social-media a {
+        font-size: 16px;
+    }
+    footer .visit{
+        font-size: 16px;
+    }   
+}
+
+@media (max-width:540px) {
+    .checkbtn {
+        font-size: 15px;
+    }
+    header #search {
+        font-size: 13px;
+    }
+    header input {
+        width: 70px;
+    }
+    header i {
+        font-size: 14px;
+    }
+    header .burger {
+        font-size: 25px;
+    }
+    header h5 {
+        font-size: 12px;
+    }
+    header .icon i {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    header .icon i span {
+        font-size: 10px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: 35px;
+        position: fixed;
+        top: 67px;
+    }
+    .position {
+        margin-top: 65px;
+    }
+    #home {
+        height: 60vh;
+        background-position: top 0% left 25%;
+    }
+    #home h1 {
+        font-size: 30px;
+    }
+    #home h4 {
+        font-size: 17px;
+    }
+    #home p {
+        font-size: 11px;
+    }
+    button {
+        padding: 11px 14px;
+    }
+    #about h1, #service h1, #price h1, #blog h1 {
+        font-size: 30px;
+        margin: 20px 0 0 0;
+    }
+    #about h4, #service h4, #price h4, #blog h4{
+        font-size: 16px;
+        top: 49px;
+    }
+    #about p, #service p, #price p, #blog p {
+        font-size: 11px;
+        padding-top: 13px; 
+    }
+    #about .about-container {
+        margin-top: 40px;
+    }
+    #about .about-container h3 {
+        font-size: 22px;
+    }
+    #about .about-container p {
+        font-size: 11px;
+    }
+    #about .about-container .image .food-img {
+        height: 275px;
+    }
+    #about .about-container .image i {
+        font-size: 40px;
+    }
+    #service .service-padding {
+        margin-top: 30px;
+    }
+    #service .service-container .menu h3 {
+        font-size: 23px;
+    }
+    #service .service-container img {
+        height: 250px;
+    }
+    .second-banner {
+        margin: 30px 0 20px;
+        height: 60vh;
+        background-position: top 0 right 60%;
+    }
+    .second-banner h5 {
+        font-size: 15px;
+    }
+    .second-banner h1 {
+        font-size: 30px;
+    }
+    .second-banner h4 {
+        font-size: 16px;
+    }
+    .second-banner p {
+        font-size: 11px;
+    }
+    .price-container {
+        margin-top: 30px;
+    }
+    .price-container .category {
+        width: 100%;
+        min-height: 300px;
+    }
+    .third-banner {
+        margin: 40px 0 20px;
+        height: 50vh;
+        background-position: top 0 left 60%;
+    }
+    .third-banner h5 {
+        font-size: 15px;
+    }
+    .third-banner h1 {
+        font-size: 30px;
+    }
+    .third-banner h4 {
+        font-size: 16px;
+    }
+    .third-banner p {
+        font-size: 11px;
+    }
+    .blog-container {
+        margin-top: 30px;
+    }
+    .blog-container .inner {
+        width: 100%;
+    }
+    .blog-container .inner-second h3{
+        font-size: 17px;
+    }
+    .blog-container .inner-second h6{
+        font-size: 11px;
+    }
+    footer {
+        margin-top: 30px;
+    }
+    footer a .burger{
+        font-size: 20px;
+        padding: 5px;
+    }
+    footer h1{
+        font-size: 25px;
+    }
+    footer h4{
+        font-size: 16px;
+    }
+    footer .social-media a {
+        font-size: 15px;
+    }
+    footer .visit{
+        font-size: 15px;
+    } 
+}
+@media (max-width:365px) {
+    header .burger {
+        display: none;
+    }
+}
