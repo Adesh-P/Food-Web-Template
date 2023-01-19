@@ -826,7 +826,6 @@ footer .visit{
     header .fa-magnifying-glass {
         display: none;
     }
-    
     header .burger {
         font-size: 30px;
     }
@@ -874,6 +873,11 @@ footer .visit{
     }
     #about .about-container {
         margin-top: 50px;
+    }
+    #about .about-container .para-margin h3, 
+    #about .about-container .para-margin p,
+    #about .about-container .para-margin button {
+        margin-left: 0px;
     }
     #about .about-container h3 {
         font-size: 25px;
@@ -971,25 +975,29 @@ footer .visit{
 
 @media (max-width:540px) {
     .checkbtn {
-        font-size: 15px;
+        font-size: 12px;
         top: -50px;
         margin-left: 30px;
     }
     header .burger {
-        font-size: 25px;
-        margin-left: 25px;
+        font-size: 23px;
+        margin-left: 0px;
     }
     header h5 a{
-        font-size: 12px;
-        margin-right: 0px;
+        font-size: 11px;
+        margin-left: 10px;
     }
     header .icon i {
-        font-size: 12px;
-        margin-left: 25px;
-        display: none;
+        font-size: 11px;
+        margin-left: 10px;
     }
     header .icon i span {
-        font-size: 10px;
+        font-size: 8px;
+    }
+    header .icon i span .number {
+        width: 12px;
+        height: 12px;
+        font-size: 7px;
     }
     .navbar {
         height: 0px;
