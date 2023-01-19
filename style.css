@@ -64,12 +64,19 @@ header .icon i {
     cursor: pointer;
 }
 header .icon i span {
-    font-size: 15px;
-    font-weight: 200;
-    /* background-color: #aac674;
-    border-radius: 50%; */
     position: absolute;
     top: -10px;
+}
+header .icon i span .number {
+    width: 15px;
+    height: 15px;
+    background-color: #aac674;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 200;
 }
 header .icon i:hover, header h5:hover, header .burger:hover  {
     color: var(--hover);
@@ -110,7 +117,13 @@ header .icon i:hover, header h5:hover, header .burger:hover  {
 .navbar a:hover {
     color: var(--hover);
     text-decoration: underline;
+}
+.navbar ul #nav-search {
+    display: none;
 } 
+.navbar ul .nav-search {
+    display: none;
+}
 #check {
     display: none;
 }
@@ -757,7 +770,6 @@ footer .visit{
         position: fixed;
         top: 70px;
         left: -100%;
-        /* background-color: rgb(249, 244, 236); */
         background-color: var(--white);
         text-align: center;
         transition: 0.5s;
@@ -768,12 +780,39 @@ footer .visit{
         font-size: 30px;
         display: block;
         font-weight: 500;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        box-shadow: 0 5px 20px rgba(66, 66, 66, 0.8);
     }
     .navbar ul li a{
-        /* background-color: rgb(249, 244, 236); */
         background-color: var(--white);
         font-weight: 600;
+    }
+    .navbar ul #nav-search {
+        display: block;
+        color: var(--bg);
+        font-size: 20px;
+    } 
+    .navbar ul input {
+        width: 91%;
+        border: 1px solid var(--bg);
+        padding: 20px 10px;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 5px;
+        height: auto;
+    }
+    .nav_search {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar ul .nav-search {
+        display: block;
+        padding-top: 20px;
+        font-size: 25px;
+        color: var(--bg);
+        cursor: pointer;
     }
     #check:checked ~ ul{
         left: 0;
@@ -787,6 +826,7 @@ footer .visit{
     header .fa-magnifying-glass {
         display: none;
     }
+    
     header .burger {
         font-size: 30px;
     }
@@ -933,18 +973,21 @@ footer .visit{
     .checkbtn {
         font-size: 15px;
         top: -50px;
+        margin-left: 30px;
     }
+  
     header .burger {
         font-size: 25px;
         margin-left: 25px;
     }
     header h5 {
         font-size: 12px;
-        margin-left: 15px;
+        margin-right: 0px;
     }
     header .icon i {
         font-size: 12px;
         margin-left: 25px;
+        display: none;
     }
     header .icon i span {
         font-size: 10px;
@@ -955,6 +998,9 @@ footer .visit{
     }
     .navbar ul {
         top: 66px;
+    }
+    .navbar ul input {
+        padding: 10px 10px;
     }
     .position {
         margin-top: 27px;
