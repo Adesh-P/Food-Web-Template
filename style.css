@@ -77,6 +77,7 @@ header .icon i span .number {
     align-items: center;
     font-size: 10px;
     font-weight: 200;
+    color: var(--black);
 }
 header .icon i:hover, header h5:hover, header .burger:hover  {
     color: var(--hover);
@@ -975,7 +976,7 @@ footer .visit{
 
 @media (max-width:540px) {
     .checkbtn {
-        font-size: 12px;
+        font-size: 14px;
         top: -50px;
         margin-left: 30px;
     }
@@ -984,11 +985,11 @@ footer .visit{
         margin-left: 0px;
     }
     header h5 a{
-        font-size: 11px;
+        font-size: 14px;
         margin-left: 10px;
     }
     header .icon i {
-        font-size: 11px;
+        font-size: 14px;
         margin-left: 10px;
     }
     header .icon i span {
