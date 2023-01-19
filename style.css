@@ -47,7 +47,7 @@ header i {
 header .burger {
     font-size: 35px;
 }
-header h5 {
+header h5 a{
     font-size: 18px;
     color: var(--white);
     font-weight: 500;
@@ -830,7 +830,7 @@ footer .visit{
     header .burger {
         font-size: 30px;
     }
-    header h5 {
+    header h5 a{
         font-size: 16px;
         margin-right: 30px;
     }
@@ -975,12 +975,11 @@ footer .visit{
         top: -50px;
         margin-left: 30px;
     }
-  
     header .burger {
         font-size: 25px;
         margin-left: 25px;
     }
-    header h5 {
+    header h5 a{
         font-size: 12px;
         margin-right: 0px;
     }
