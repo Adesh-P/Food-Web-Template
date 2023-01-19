@@ -76,7 +76,7 @@ header .icon i span .number {
     justify-content: center;
     align-items: center;
     font-size: 10px;
-    font-weight: 200;
+    font-weight: 400;
     color: var(--black);
 }
 header .icon i:hover, header h5:hover, header .burger:hover  {
@@ -777,11 +777,11 @@ footer .visit{
         z-index: 50;
     }
     .navbar ul li {
-        padding: 20px 0;
+        padding: 12px 0;
         font-size: 30px;
         display: block;
         font-weight: 500;
-        box-shadow: 0 5px 20px rgba(66, 66, 66, 0.8);
+        box-shadow: 0 5px 15px rgba(66, 66, 66, 0.4);
     }
     .navbar ul li a{
         background-color: var(--white);
@@ -795,7 +795,7 @@ footer .visit{
     .navbar ul input {
         width: 91%;
         border: 1px solid var(--bg);
-        padding: 20px 10px;
+        padding: 16px 10px;
         margin-top: 20px;
         margin-left: 10px;
         border-radius: 5px;
@@ -1005,7 +1005,7 @@ footer .visit{
         background-color: #c83516;
     }
     .navbar ul {
-        top: 66px;
+        top: 65px;
     }
     .navbar ul input {
         padding: 10px 10px;
